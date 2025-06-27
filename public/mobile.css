@@ -1,0 +1,123 @@
+/* how do i get these styles on to my js file? 
+ */
+@media only screen and (max-width: 414px) {
+  body {
+    /*     background: #D4A3AA; */
+    background: red;
+  }
+  h1 {
+    font-family: "eds-market-main-script", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25pt;
+    text-decoration: none;
+    color: #d5bea7;
+  }
+
+  h2 {
+    font-family: "ltc-flash", sans-serif;
+    font-weight: 400;
+    font-size: 30pt;
+    font-style: normal;
+    color: white;
+  }
+  h3 {
+    font-family: "ltc-flash", sans-serif;
+    font-weight: 400;
+    font-size: 15pt;
+    font-style: normal;
+    color: white;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 50px 150px 150px 150px;
+  }
+  .item1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .title {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #myBtn {
+    background-color: red;
+    border: solid;
+    opacity: 0.95;
+    color: white;
+    padding: 10px 22px;
+    font-family: "ltc-flash", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    display: inline-block;
+    font-size: 20px;
+  }
+  /*  keyframe chaining  */
+  .btnanim {
+    animation-name: colorFlip;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+  
+  
+  @keyframes colorFlip {
+    0% {
+      background-color: red; 
+      color: white;
+    }
+    
+    50%{
+      background-color:white;
+      color:red;
+    }
+    
+     100% {
+      background-color: red; 
+      color: white;
+    }
+  }
+
+
+.item3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px;
+}
+
+.clientResponse {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin: 20px;
+}
+
+.arrayInfo {
+  background: white;
+  border: solid;
+  font-family: "ltc-flash", sans-serif;
+  font-weight: 400;
+  font-size: 20pt;
+  font-style: normal;
+  color: red;
+}
+  
+  .click{
+    justify-self: center;
+    width: 50vw;
+  }
